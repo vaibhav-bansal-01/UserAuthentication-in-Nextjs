@@ -64,6 +64,11 @@ export default function Login() {
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder="Password"
       />
+
+      <Link href="/forgot-password-request" className="text-blue-400 hover:underline mt-4">
+        Forgot Password?
+      </Link>
+
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
         onClick={onLogin}
